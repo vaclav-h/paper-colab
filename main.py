@@ -30,7 +30,6 @@ class VisGraphicsScene(QGraphicsScene):
             if self.txt:
                 self.removeItem(self.txt)
                 self.txt = None
-        print(event.scenePos())
         item = self.itemAt(event.scenePos(), QTransform())
         if(item):
             # Select node, show outline and authors name
